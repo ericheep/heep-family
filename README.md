@@ -1,9 +1,6 @@
 # heep-family
 
-## Project setup
-```
-npm install
-```
+Vue app for a blog type genealogy website to store family updates and other news.
 
 ### Compiles and hot-reloads for development
 ```

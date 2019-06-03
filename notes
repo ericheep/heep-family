@@ -1,0 +1,4 @@
+* to deploy, git push master dokku (git push master branch to dokku remote)
+* the dokku app is not using virtual hosts, and we had to add a proxy from 80 to 8080, which is what is exposed in the Docker image
+* using butter cms to manage content
+
