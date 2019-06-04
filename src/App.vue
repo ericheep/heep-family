@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <AppHeader/>
-    <AppContent/>
-    <AppSidebar/>
+    <AppHeader id="app-header"/>
+    <AppContent id="app-content"/>
+    <AppSidebar id="app-sidebar"/>
   </div>
 </template>
 
@@ -23,11 +23,21 @@ export default {
 
 <style>
 #app {
+  display: flex;
+  flex-direction: column;
   font-family: 'Leckerli One', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+#app-header {
+}
+#app-content {
+
+}
+#app-sidebar {
+
 }
 </style>
