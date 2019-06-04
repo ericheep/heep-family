@@ -8,7 +8,7 @@
 import { mapActions } from 'vuex'
 
 export default {
-  name: 'app-sider',
+  name: 'app-sidebar',
   methods: {
     ...mapActions([
       'getBlogPosts'

@@ -8,10 +8,7 @@
 import { mapActions } from 'vuex'
 
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  },
+  name: 'app-content',
   methods: {
     ...mapActions([
       'getBlogPosts'
