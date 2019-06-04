@@ -1,23 +1,29 @@
 <template>
   <div id="app">
-    <HelloWorld msg="HEEP FAMILY"/>
+    <AppHeader/>
+    <AppContent/>
+    <AppSidebar/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from './components/AppHeader.vue'
+import AppContent from './components/AppContent.vue'
+import AppSidebar from './components/AppSidebar.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    AppHeader,
+    AppContent,
+    AppSidebar,
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Leckerli One', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
