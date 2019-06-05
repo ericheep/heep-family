@@ -22,11 +22,19 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  text-align: left;
+}
+h2 {
+  text-align: center;
+}
 h3 {
   font-family: 'Roboto', sans-serif;
+  text-align: left;
 }
 p {
   font-family: 'Roboto', sans-serif;
+  text-align: left;
 }
 </style>
 
