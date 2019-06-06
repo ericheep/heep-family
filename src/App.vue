@@ -31,8 +31,9 @@ body {
 }
 #app {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  /* grid-template-rows: 100px 650px 100px; */
+  /* grid-template-columns: repeat(12, 1fr); */
+  /* grid-template-columns: [first] 90px [second] auto [end] 90px;*/
+  /*grid-template-rows: 100px 700px 100px;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -41,6 +42,10 @@ body {
 }
 #app-header {
   grid-column: span 12;
+  top: 0;
+  position: sticky;
+  opacity: 0.9;
+  background-color: #f4f2ef;
 }
 #app-sidebar {
   grid-column: span 3;

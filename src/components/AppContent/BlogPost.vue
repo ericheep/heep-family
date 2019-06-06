@@ -31,6 +31,7 @@ export default {
   font-family: 'Lora', sans-serif;
   font-size: 42px;
   text-align: left;
+  padding-top: 10px;
 }
 #blog-created-at {
   font-family: 'Lora', sans-serif;

@@ -20,12 +20,11 @@ export default {
   display: flex;
   flex: 1 0 auto;
   flex-direction: row;
-  justify-content: center;
-  margin-bottom: 10px;
+  justify-content: space-evenly;
 }
 .nav-item {
   font-family: 'Leckerli One', cursive;
-  align-self: flex-end;
-  margin: 0px 14px;
+  font-size: 18px;
+  align-self: center;
 }
 </style>

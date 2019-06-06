@@ -1,6 +1,6 @@
 <template>
   <div id='app-header'>
-    <div id='logo'>HEEP FAMILY</div>
+    <div id='logo'>HEEP</div>
     <AppNav/>
   </div>
 </template>
@@ -23,7 +23,7 @@ export default {
 #app-header {
   display: flex;
   flex: 1 0 auto;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
   border-bottom: 1px solid black;
 }
