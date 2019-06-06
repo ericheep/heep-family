@@ -4,6 +4,7 @@
       <BlogPost
          v-bind:postTitle="blogPost.title"
          v-bind:postDescription="blogPost.htmlStringDescription"
+         v-bind:createdAt="blogPost.createdAt"
       />
     </div>
   </div>

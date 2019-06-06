@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import { fetchBlogPosts } from '../utils/contentful-actions'
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
+import { formatMonthDay } from '../utils/helpers'
 
 Vue.use(Vuex)
 
@@ -20,6 +21,7 @@ export const store = new Vuex.Store({
             title: rawBlogPost.fields.title,
             slug: rawBlogPost.fields.slug,
             htmlStringDescription: documentToHtmlString(rawBlogPost.fields.description),
+            createdAt: formatMonthDay(new Date(rawBlogPost.sys.createdAt)),
           }
         })
         commit('GET_BLOG_POSTS', blogPosts)

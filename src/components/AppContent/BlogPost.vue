@@ -1,7 +1,8 @@
 <template>
-  <div class="blog-post">
-    <h3>{{ postTitle }}</h3>
-    <p v-html=postDescription />
+  <div id='blog-post'>
+    <div id='blog-title'>{{ postTitle }}</div>
+    <div id='blog-created-at'>{{ createdAt }}</div>
+    <div id='blog-content' v-html=postDescription />
   </div>
 </template>
 
@@ -11,30 +12,36 @@ export default {
   props: {
     postTitle: {
       type: String,
-      required: String,
+      required: true,
     },
     postDescription: {
       type: String,
-      required: String,
+      required: true,
+    },
+    createdAt: {
+      type: String,
+      required: true,
     },
   },
 }
 </script>
 
 <style scoped>
-h1 {
+#blog-title {
+  font-family: 'Lora', sans-serif;
+  font-size: 42px;
   text-align: left;
 }
-h2 {
-  text-align: center;
-}
-h3 {
-  font-family: 'Roboto', sans-serif;
+#blog-created-at {
+  font-family: 'Lora', sans-serif;
+  font-size: 14px;
+  font-weight: 100;
   text-align: left;
+  padding-bottom: 20px;
 }
-p {
-  font-family: 'Roboto', sans-serif;
+#blog-post {
+  margin: 20px 50px;
+  max-width: 700px;
   text-align: left;
 }
 </style>
-
