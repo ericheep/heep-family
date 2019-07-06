@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>app sidebar</h1>
+    <div v-for="blogPost in blogPosts" :key="blogPost.slug">
+      <p> {{ blogPost.title }} </p>
+    </div>
   </div>
 </template>
 
@@ -8,7 +10,12 @@
 import { mapActions } from 'vuex'
 
 export default {
-  name: 'app-sidebar',
+  name: 'blog-posts',
+  computed: {
+    blogPosts() {
+      return this.$store.state.blogPosts
+    },
+  },
   methods: {
     ...mapActions([
       'getBlogPosts'

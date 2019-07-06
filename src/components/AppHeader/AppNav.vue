@@ -1,6 +1,6 @@
 <template>
   <div id='app-nav'>
-    <div class='nav-item'>News</div>
+    <router-link class='nav-item' to="/blog">Blog</router-link>
     <div class='nav-item'>People</div>
     <div class='nav-item'>About</div>
   </div>

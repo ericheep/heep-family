@@ -1,6 +1,6 @@
 <template>
   <div id='app-header'>
-    <div id='logo'>HEEP</div>
+    <router-link id='logo' to="/">HEEP</router-link>
     <AppNav/>
   </div>
 </template>

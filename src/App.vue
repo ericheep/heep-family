@@ -1,24 +1,19 @@
 <template>
   <div id="app">
     <AppHeader id="app-header"/>
-    <AppSidebar id="app-sidebar"/>
-    <AppContent id="app-content"/>
+    <router-view></router-view>
     <AppFooter id="app-footer"/>
   </div>
 </template>
 
 <script>
 import AppHeader from './components/AppHeader.vue'
-import AppContent from './components/AppContent.vue'
-import AppSidebar from './components/AppSidebar.vue'
 import AppFooter from './components/AppFooter.vue'
 
 export default {
   name: 'app',
   components: {
     AppHeader,
-    AppContent,
-    AppSidebar,
     AppFooter,
   }
 }

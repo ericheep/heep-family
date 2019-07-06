@@ -22,6 +22,9 @@ export const store = new Vuex.Store({
             slug: rawBlogPost.fields.slug,
             htmlStringDescription: documentToHtmlString(rawBlogPost.fields.description),
             createdAt: formatMonthDay(new Date(rawBlogPost.sys.createdAt)),
+            gridImage: {
+              url: rawBlogPost.fields.gridImage.fields.file.url,
+            }
           }
         })
         commit('GET_BLOG_POSTS', blogPosts)
